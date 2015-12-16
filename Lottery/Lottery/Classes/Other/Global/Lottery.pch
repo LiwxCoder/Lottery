@@ -1,0 +1,28 @@
+//
+//  35-我的彩票.pch
+//  35-我的彩票
+//
+//  Created by 李伟雄 on 15/12/15.
+//  Copyright © 2015年 小码哥. All rights reserved.
+//
+
+#ifndef _5______pch
+#define _5______pch
+
+#ifdef __OBJC__
+
+
+// 快速设置颜色UIColor
+#define WXColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g) / 255.0 blue:(b)/ 255.0 alpha:1]
+
+// 获取应用程序的keyWindow
+#define WXKeyWindow [UIApplication sharedApplication].keyWindow
+
+
+#define screenW [UIScreen mainScreen].bounds.size.width
+#define screenH [UIScreen mainScreen].bounds.size.height
+
+#endif
+
+
+#endif /* _5______pch */

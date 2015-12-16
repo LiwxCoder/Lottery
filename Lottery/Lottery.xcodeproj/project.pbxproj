@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9D335D51C21D362001F920E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D335D41C21D362001F920E /* Assets.xcassets */; };
+		D9D335E31C21D362001F920E /* LotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335E21C21D362001F920E /* LotteryTests.m */; };
+		D9D335EE1C21D362001F920E /* LotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335ED1C21D362001F920E /* LotteryUITests.m */; };
+		D9D3363B1C21D3D7001F920E /* WXArenaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335FF1C21D3D7001F920E /* WXArenaNavigationController.m */; };
+		D9D3363C1C21D3D7001F920E /* WXArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336011C21D3D7001F920E /* WXArenaViewController.m */; };
+		D9D3363D1C21D3D7001F920E /* WXArenaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336051C21D3D7001F920E /* WXArenaView.m */; };
+		D9D3363E1C21D3D7001F920E /* WXDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336091C21D3D7001F920E /* WXDiscoverViewController.m */; };
+		D9D3363F1C21D3D7001F920E /* WXDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D3360A1C21D3D7001F920E /* WXDiscoverViewController.storyboard */; };
+		D9D336401C21D3D7001F920E /* WXHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336101C21D3D7001F920E /* WXHallViewController.m */; };
+		D9D336411C21D3D7001F920E /* WXCover.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336141C21D3D7001F920E /* WXCover.m */; };
+		D9D336421C21D3D7001F920E /* WXPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336161C21D3D7001F920E /* WXPopMenu.m */; };
+		D9D336431C21D3D7001F920E /* WXPopMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D336171C21D3D7001F920E /* WXPopMenu.xib */; };
+		D9D336441C21D3D7001F920E /* WXHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3361B1C21D3D7001F920E /* WXHistoryViewController.m */; };
+		D9D336451C21D3D7001F920E /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336211C21D3D7001F920E /* WXNavigationController.m */; };
+		D9D336461C21D3D7001F920E /* WXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336231C21D3D7001F920E /* WXTabBarController.m */; };
+		D9D336471C21D3D7001F920E /* WXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336271C21D3D7001F920E /* WXTabBar.m */; };
+		D9D336481C21D3D7001F920E /* WXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336291C21D3D7001F920E /* WXTabBarButton.m */; };
+		D9D336491C21D3D7001F920E /* WXMyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3362D1C21D3D7001F920E /* WXMyLotteryViewController.m */; };
+		D9D3364A1C21D3D7001F920E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336321C21D3D7001F920E /* AppDelegate.m */; };
+		D9D3364B1C21D3D7001F920E /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336351C21D3D7001F920E /* UIImage+Image.m */; };
+		D9D3364C1C21D3D7001F920E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336371C21D3D7001F920E /* UIView+Frame.m */; };
+		D9D3364D1C21D3D7001F920E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3363A1C21D3D7001F920E /* main.m */; };
+		D9D336501C21D404001F920E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D3364E1C21D404001F920E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9D335DF1C21D362001F920E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D335BD1C21D362001F920E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9D335C41C21D362001F920E;
+			remoteInfo = Lottery;
+		};
+		D9D335EA1C21D362001F920E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D335BD1C21D362001F920E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9D335C41C21D362001F920E;
+			remoteInfo = Lottery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9D335C51C21D362001F920E /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D335D41C21D362001F920E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9D335D91C21D362001F920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D335DE1C21D362001F920E /* LotteryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotteryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D335E21C21D362001F920E /* LotteryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryTests.m; sourceTree = "<group>"; };
+		D9D335E41C21D362001F920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D335E91C21D362001F920E /* LotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D335ED1C21D362001F920E /* LotteryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryUITests.m; sourceTree = "<group>"; };
+		D9D335EF1C21D362001F920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D335FE1C21D3D7001F920E /* WXArenaNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXArenaNavigationController.h; sourceTree = "<group>"; };
+		D9D335FF1C21D3D7001F920E /* WXArenaNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXArenaNavigationController.m; sourceTree = "<group>"; };
+		D9D336001C21D3D7001F920E /* WXArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXArenaViewController.h; sourceTree = "<group>"; };
+		D9D336011C21D3D7001F920E /* WXArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXArenaViewController.m; sourceTree = "<group>"; };
+		D9D336041C21D3D7001F920E /* WXArenaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXArenaView.h; sourceTree = "<group>"; };
+		D9D336051C21D3D7001F920E /* WXArenaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXArenaView.m; sourceTree = "<group>"; };
+		D9D336081C21D3D7001F920E /* WXDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDiscoverViewController.h; sourceTree = "<group>"; };
+		D9D336091C21D3D7001F920E /* WXDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDiscoverViewController.m; sourceTree = "<group>"; };
+		D9D3360A1C21D3D7001F920E /* WXDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WXDiscoverViewController.storyboard; sourceTree = "<group>"; };
+		D9D3360F1C21D3D7001F920E /* WXHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHallViewController.h; sourceTree = "<group>"; };
+		D9D336101C21D3D7001F920E /* WXHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHallViewController.m; sourceTree = "<group>"; };
+		D9D336131C21D3D7001F920E /* WXCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCover.h; sourceTree = "<group>"; };
+		D9D336141C21D3D7001F920E /* WXCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCover.m; sourceTree = "<group>"; };
+		D9D336151C21D3D7001F920E /* WXPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPopMenu.h; sourceTree = "<group>"; };
+		D9D336161C21D3D7001F920E /* WXPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPopMenu.m; sourceTree = "<group>"; };
+		D9D336171C21D3D7001F920E /* WXPopMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXPopMenu.xib; sourceTree = "<group>"; };
+		D9D3361A1C21D3D7001F920E /* WXHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHistoryViewController.h; sourceTree = "<group>"; };
+		D9D3361B1C21D3D7001F920E /* WXHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHistoryViewController.m; sourceTree = "<group>"; };
+		D9D336201C21D3D7001F920E /* WXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNavigationController.h; sourceTree = "<group>"; };
+		D9D336211C21D3D7001F920E /* WXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNavigationController.m; sourceTree = "<group>"; };
+		D9D336221C21D3D7001F920E /* WXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTabBarController.h; sourceTree = "<group>"; };
+		D9D336231C21D3D7001F920E /* WXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTabBarController.m; sourceTree = "<group>"; };
+		D9D336261C21D3D7001F920E /* WXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTabBar.h; sourceTree = "<group>"; };
+		D9D336271C21D3D7001F920E /* WXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTabBar.m; sourceTree = "<group>"; };
+		D9D336281C21D3D7001F920E /* WXTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTabBarButton.h; sourceTree = "<group>"; };
+		D9D336291C21D3D7001F920E /* WXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTabBarButton.m; sourceTree = "<group>"; };
+		D9D3362C1C21D3D7001F920E /* WXMyLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXMyLotteryViewController.h; sourceTree = "<group>"; };
+		D9D3362D1C21D3D7001F920E /* WXMyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXMyLotteryViewController.m; sourceTree = "<group>"; };
+		D9D336311C21D3D7001F920E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9D336321C21D3D7001F920E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9D336341C21D3D7001F920E /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		D9D336351C21D3D7001F920E /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		D9D336361C21D3D7001F920E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D9D336371C21D3D7001F920E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		D9D336391C21D3D7001F920E /* Lottery.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lottery.pch; sourceTree = "<group>"; };
+		D9D3363A1C21D3D7001F920E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9D3364F1C21D404001F920E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9D335C21C21D362001F920E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D335DB1C21D362001F920E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D335E61C21D362001F920E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9D335BC1C21D362001F920E = {
+			isa = PBXGroup;
+			children = (
+				D9D335C71C21D362001F920E /* Lottery */,
+				D9D335E11C21D362001F920E /* LotteryTests */,
+				D9D335EC1C21D362001F920E /* LotteryUITests */,
+				D9D335C61C21D362001F920E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9D335C61C21D362001F920E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9D335C51C21D362001F920E /* Lottery.app */,
+				D9D335DE1C21D362001F920E /* LotteryTests.xctest */,
+				D9D335E91C21D362001F920E /* LotteryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9D335C71C21D362001F920E /* Lottery */ = {
+			isa = PBXGroup;
+			children = (
+				D9D335FB1C21D3D7001F920E /* Classes */,
+				D9D335D41C21D362001F920E /* Assets.xcassets */,
+				D9D3364E1C21D404001F920E /* LaunchScreen.storyboard */,
+				D9D335C81C21D362001F920E /* Supporting Files */,
+			);
+			path = Lottery;
+			sourceTree = "<group>";
+		};
+		D9D335C81C21D362001F920E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9D335D91C21D362001F920E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9D335E11C21D362001F920E /* LotteryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9D335E21C21D362001F920E /* LotteryTests.m */,
+				D9D335E41C21D362001F920E /* Info.plist */,
+			);
+			path = LotteryTests;
+			sourceTree = "<group>";
+		};
+		D9D335EC1C21D362001F920E /* LotteryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9D335ED1C21D362001F920E /* LotteryUITests.m */,
+				D9D335EF1C21D362001F920E /* Info.plist */,
+			);
+			path = LotteryUITests;
+			sourceTree = "<group>";
+		};
+		D9D335FB1C21D3D7001F920E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D9D335FC1C21D3D7001F920E /* Arena(竞技场) */,
+				D9D336061C21D3D7001F920E /* Discover(发现) */,
+				D9D3360D1C21D3D7001F920E /* Hall(购彩大厅) */,
+				D9D336181C21D3D7001F920E /* History(开奖信息) */,
+				D9D3361E1C21D3D7001F920E /* Main(主要) */,
+				D9D3362A1C21D3D7001F920E /* MyLottery(我的彩票) */,
+				D9D336301C21D3D7001F920E /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D9D335FC1C21D3D7001F920E /* Arena(竞技场) */ = {
+			isa = PBXGroup;
+			children = (
+				D9D335FD1C21D3D7001F920E /* Controller */,
+				D9D336021C21D3D7001F920E /* Model */,
+				D9D336031C21D3D7001F920E /* View */,
+			);
+			path = "Arena(竞技场)";
+			sourceTree = "<group>";
+		};
+		D9D335FD1C21D3D7001F920E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9D335FE1C21D3D7001F920E /* WXArenaNavigationController.h */,
+				D9D335FF1C21D3D7001F920E /* WXArenaNavigationController.m */,
+				D9D336001C21D3D7001F920E /* WXArenaViewController.h */,
+				D9D336011C21D3D7001F920E /* WXArenaViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9D336021C21D3D7001F920E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9D336031C21D3D7001F920E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336041C21D3D7001F920E /* WXArenaView.h */,
+				D9D336051C21D3D7001F920E /* WXArenaView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9D336061C21D3D7001F920E /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336071C21D3D7001F920E /* Controller */,
+				D9D3360B1C21D3D7001F920E /* Model */,
+				D9D3360C1C21D3D7001F920E /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		D9D336071C21D3D7001F920E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336081C21D3D7001F920E /* WXDiscoverViewController.h */,
+				D9D336091C21D3D7001F920E /* WXDiscoverViewController.m */,
+				D9D3360A1C21D3D7001F920E /* WXDiscoverViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9D3360B1C21D3D7001F920E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9D3360C1C21D3D7001F920E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9D3360D1C21D3D7001F920E /* Hall(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3360E1C21D3D7001F920E /* Controller */,
+				D9D336111C21D3D7001F920E /* Model */,
+				D9D336121C21D3D7001F920E /* View */,
+			);
+			path = "Hall(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		D9D3360E1C21D3D7001F920E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3360F1C21D3D7001F920E /* WXHallViewController.h */,
+				D9D336101C21D3D7001F920E /* WXHallViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9D336111C21D3D7001F920E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9D336121C21D3D7001F920E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336131C21D3D7001F920E /* WXCover.h */,
+				D9D336141C21D3D7001F920E /* WXCover.m */,
+				D9D336151C21D3D7001F920E /* WXPopMenu.h */,
+				D9D336161C21D3D7001F920E /* WXPopMenu.m */,
+				D9D336171C21D3D7001F920E /* WXPopMenu.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9D336181C21D3D7001F920E /* History(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336191C21D3D7001F920E /* Controller */,
+				D9D3361C1C21D3D7001F920E /* Model */,
+				D9D3361D1C21D3D7001F920E /* View */,
+			);
+			path = "History(开奖信息)";
+			sourceTree = "<group>";
+		};
+		D9D336191C21D3D7001F920E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3361A1C21D3D7001F920E /* WXHistoryViewController.h */,
+				D9D3361B1C21D3D7001F920E /* WXHistoryViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9D3361C1C21D3D7001F920E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9D3361D1C21D3D7001F920E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9D3361E1C21D3D7001F920E /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3361F1C21D3D7001F920E /* Controller */,
+				D9D336241C21D3D7001F920E /* Model */,
+				D9D336251C21D3D7001F920E /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		D9D3361F1C21D3D7001F920E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336201C21D3D7001F920E /* WXNavigationController.h */,
+				D9D336211C21D3D7001F920E /* WXNavigationController.m */,
+				D9D336221C21D3D7001F920E /* WXTabBarController.h */,
+				D9D336231C21D3D7001F920E /* WXTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9D336241C21D3D7001F920E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9D336251C21D3D7001F920E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336261C21D3D7001F920E /* WXTabBar.h */,
+				D9D336271C21D3D7001F920E /* WXTabBar.m */,
+				D9D336281C21D3D7001F920E /* WXTabBarButton.h */,
+				D9D336291C21D3D7001F920E /* WXTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9D3362A1C21D3D7001F920E /* MyLottery(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3362B1C21D3D7001F920E /* Controller */,
+				D9D3362E1C21D3D7001F920E /* Model */,
+				D9D3362F1C21D3D7001F920E /* View */,
+			);
+			path = "MyLottery(我的彩票)";
+			sourceTree = "<group>";
+		};
+		D9D3362B1C21D3D7001F920E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3362C1C21D3D7001F920E /* WXMyLotteryViewController.h */,
+				D9D3362D1C21D3D7001F920E /* WXMyLotteryViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9D3362E1C21D3D7001F920E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9D3362F1C21D3D7001F920E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9D336301C21D3D7001F920E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336311C21D3D7001F920E /* AppDelegate.h */,
+				D9D336321C21D3D7001F920E /* AppDelegate.m */,
+				D9D336331C21D3D7001F920E /* Category */,
+				D9D336381C21D3D7001F920E /* Global */,
+				D9D3363A1C21D3D7001F920E /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D9D336331C21D3D7001F920E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336341C21D3D7001F920E /* UIImage+Image.h */,
+				D9D336351C21D3D7001F920E /* UIImage+Image.m */,
+				D9D336361C21D3D7001F920E /* UIView+Frame.h */,
+				D9D336371C21D3D7001F920E /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D9D336381C21D3D7001F920E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D9D336391C21D3D7001F920E /* Lottery.pch */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9D335C41C21D362001F920E /* Lottery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D335F21C21D362001F920E /* Build configuration list for PBXNativeTarget "Lottery" */;
+			buildPhases = (
+				D9D335C11C21D362001F920E /* Sources */,
+				D9D335C21C21D362001F920E /* Frameworks */,
+				D9D335C31C21D362001F920E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lottery;
+			productName = Lottery;
+			productReference = D9D335C51C21D362001F920E /* Lottery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9D335DD1C21D362001F920E /* LotteryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D335F51C21D362001F920E /* Build configuration list for PBXNativeTarget "LotteryTests" */;
+			buildPhases = (
+				D9D335DA1C21D362001F920E /* Sources */,
+				D9D335DB1C21D362001F920E /* Frameworks */,
+				D9D335DC1C21D362001F920E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9D335E01C21D362001F920E /* PBXTargetDependency */,
+			);
+			name = LotteryTests;
+			productName = LotteryTests;
+			productReference = D9D335DE1C21D362001F920E /* LotteryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9D335E81C21D362001F920E /* LotteryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D335F81C21D362001F920E /* Build configuration list for PBXNativeTarget "LotteryUITests" */;
+			buildPhases = (
+				D9D335E51C21D362001F920E /* Sources */,
+				D9D335E61C21D362001F920E /* Frameworks */,
+				D9D335E71C21D362001F920E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9D335EB1C21D362001F920E /* PBXTargetDependency */,
+			);
+			name = LotteryUITests;
+			productName = LotteryUITests;
+			productReference = D9D335E91C21D362001F920E /* LotteryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9D335BD1C21D362001F920E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Liwx;
+				TargetAttributes = {
+					D9D335C41C21D362001F920E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					D9D335DD1C21D362001F920E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D9D335C41C21D362001F920E;
+					};
+					D9D335E81C21D362001F920E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D9D335C41C21D362001F920E;
+					};
+				};
+			};
+			buildConfigurationList = D9D335C01C21D362001F920E /* Build configuration list for PBXProject "Lottery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9D335BC1C21D362001F920E;
+			productRefGroup = D9D335C61C21D362001F920E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9D335C41C21D362001F920E /* Lottery */,
+				D9D335DD1C21D362001F920E /* LotteryTests */,
+				D9D335E81C21D362001F920E /* LotteryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9D335C31C21D362001F920E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D336431C21D3D7001F920E /* WXPopMenu.xib in Resources */,
+				D9D336501C21D404001F920E /* LaunchScreen.storyboard in Resources */,
+				D9D335D51C21D362001F920E /* Assets.xcassets in Resources */,
+				D9D3363F1C21D3D7001F920E /* WXDiscoverViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D335DC1C21D362001F920E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D335E71C21D362001F920E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9D335C11C21D362001F920E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D3363E1C21D3D7001F920E /* WXDiscoverViewController.m in Sources */,
+				D9D3363B1C21D3D7001F920E /* WXArenaNavigationController.m in Sources */,
+				D9D336441C21D3D7001F920E /* WXHistoryViewController.m in Sources */,
+				D9D336411C21D3D7001F920E /* WXCover.m in Sources */,
+				D9D3364A1C21D3D7001F920E /* AppDelegate.m in Sources */,
+				D9D3363D1C21D3D7001F920E /* WXArenaView.m in Sources */,
+				D9D336461C21D3D7001F920E /* WXTabBarController.m in Sources */,
+				D9D3364D1C21D3D7001F920E /* main.m in Sources */,
+				D9D3364B1C21D3D7001F920E /* UIImage+Image.m in Sources */,
+				D9D336471C21D3D7001F920E /* WXTabBar.m in Sources */,
+				D9D336451C21D3D7001F920E /* WXNavigationController.m in Sources */,
+				D9D336421C21D3D7001F920E /* WXPopMenu.m in Sources */,
+				D9D3364C1C21D3D7001F920E /* UIView+Frame.m in Sources */,
+				D9D336481C21D3D7001F920E /* WXTabBarButton.m in Sources */,
+				D9D336491C21D3D7001F920E /* WXMyLotteryViewController.m in Sources */,
+				D9D336401C21D3D7001F920E /* WXHallViewController.m in Sources */,
+				D9D3363C1C21D3D7001F920E /* WXArenaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D335DA1C21D362001F920E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D335E31C21D362001F920E /* LotteryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D335E51C21D362001F920E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D335EE1C21D362001F920E /* LotteryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9D335E01C21D362001F920E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9D335C41C21D362001F920E /* Lottery */;
+			targetProxy = D9D335DF1C21D362001F920E /* PBXContainerItemProxy */;
+		};
+		D9D335EB1C21D362001F920E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9D335C41C21D362001F920E /* Lottery */;
+			targetProxy = D9D335EA1C21D362001F920E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9D3364E1C21D404001F920E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9D3364F1C21D404001F920E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9D335F01C21D362001F920E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9D335F11C21D362001F920E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9D335F31C21D362001F920E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Lottery/Classes/Other/Global/Lottery.pch;
+				INFOPLIST_FILE = Lottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Liwx.Lottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9D335F41C21D362001F920E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Lottery/Classes/Other/Global/Lottery.pch;
+				INFOPLIST_FILE = Lottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Liwx.Lottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D9D335F61C21D362001F920E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LotteryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Liwx.LotteryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lottery.app/Lottery";
+			};
+			name = Debug;
+		};
+		D9D335F71C21D362001F920E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LotteryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Liwx.LotteryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lottery.app/Lottery";
+			};
+			name = Release;
+		};
+		D9D335F91C21D362001F920E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LotteryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Liwx.LotteryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Lottery;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D9D335FA1C21D362001F920E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LotteryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Liwx.LotteryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Lottery;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9D335C01C21D362001F920E /* Build configuration list for PBXProject "Lottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D335F01C21D362001F920E /* Debug */,
+				D9D335F11C21D362001F920E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D335F21C21D362001F920E /* Build configuration list for PBXNativeTarget "Lottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D335F31C21D362001F920E /* Debug */,
+				D9D335F41C21D362001F920E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D9D335F51C21D362001F920E /* Build configuration list for PBXNativeTarget "LotteryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D335F61C21D362001F920E /* Debug */,
+				D9D335F71C21D362001F920E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D9D335F81C21D362001F920E /* Build configuration list for PBXNativeTarget "LotteryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D335F91C21D362001F920E /* Debug */,
+				D9D335FA1C21D362001F920E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9D335BD1C21D362001F920E /* Project object */;
+}
