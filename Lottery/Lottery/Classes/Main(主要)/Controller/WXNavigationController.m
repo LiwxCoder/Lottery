@@ -9,7 +9,7 @@
 #import "WXNavigationController.h"
 #import "UIImage+Image.h"
 
-@interface WXNavigationController () <UINavigationControllerDelegate>
+@interface WXNavigationController () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
 // 用来记录系统的手势代理
 @property (nonatomic, strong) id popDelegate;
@@ -79,7 +79,7 @@
 {
     [super viewDidLoad];
     
-    // 1.系统的手势类型:UIScreenEdgePanGestureRecognizer,才不能全屏滑动
+    // 1.系统的手势类型:UIScreenEdgePanGestureRecognizer,是边缘拖动手势,不能全屏滑动
     UIScreenEdgePanGestureRecognizer *gesture = (UIScreenEdgePanGestureRecognizer *)self.interactivePopGestureRecognizer;
     // 取消系统的滑动功能
     gesture.enabled = NO;
@@ -95,23 +95,20 @@
     // 自定义手势也直接调用系统滑动手势调用的方法handleNavigationTransition:,实现全屏都可滑动
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
     
+    // 设置拖动手势代理,目的是为了让导航控制器的根控制器不能拖动
+    pan.delegate = self;
+    
+    // 系统手势的view上
     [gesture.view addGestureRecognizer:pan];
     
-    
-    
-//    // 设置导航控制器的代理,目的是监听子控制器有没有完全显示
-//    self.delegate = self;
 }
 
-// 当导航控制器的子控制器完全显示调用
-//- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-//{
-//    // 判断是否是导航控制器的根控制器,如果是根控制器,则恢复代理,否则如果在导航控制器的根控制器中拖动,会出现假死状态
-//    if (viewController == self.childViewControllers[0]) {
-//        // 还原系统手势
-//        self.interactivePopGestureRecognizer.delegate = _popDelegate;
-//    }
-//}
+// 判断是否允许触发手势
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    // 设置根控制器不能滑动 如果是根控制器,返回NO
+    return self.childViewControllers.count != 1;
+}
 
 // 重写pushViewController方法,通过该方法实现统一修改导航栏左边的返回按钮
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
@@ -122,6 +119,8 @@
         // 以下操作覆盖了导航条系统自带的返回按钮,系统的边缘滑动功能失效,不会是自定义手势失效
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriginalImageName:@"NavBack"] style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonClick)];
         
+        // 导航控制器子控制器跳转,隐藏底部TabBar, 也可以在storyboard中设置子控制器的hidesBottomBarWhenPushed属性
+        viewController.hidesBottomBarWhenPushed = YES;
     }
     
     // 执行跳转操作
