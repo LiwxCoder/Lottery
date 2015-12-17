@@ -72,6 +72,7 @@
 // 点击左边的按钮,执行popViewControllerAnimated操作
 - (void)leftBarButtonClick
 {
+    // 点击左边返回按钮,执行pop操作
     [self popViewControllerAnimated:YES];
 }
 
