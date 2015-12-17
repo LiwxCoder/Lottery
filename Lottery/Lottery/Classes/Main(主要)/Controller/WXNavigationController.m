@@ -79,29 +79,39 @@
 {
     [super viewDidLoad];
     
-    // 禁用系统边缘滑动功能
-//    self.interactivePopGestureRecognizer.enabled = NO;
-    // 取消系统手势代理
-//    self.interactivePopGestureRecognizer.delegate = nil;
+    // 1.系统的手势类型:UIScreenEdgePanGestureRecognizer,才不能全屏滑动
+    UIScreenEdgePanGestureRecognizer *gesture = (UIScreenEdgePanGestureRecognizer *)self.interactivePopGestureRecognizer;
+    // 取消系统的滑动功能
+    gesture.enabled = NO;
     
-    // 成员属性记录系统的手势
-    _popDelegate = self.interactivePopGestureRecognizer.delegate;
+    // 2.target:_UINavigationInteractiveTransition
+    // 取出导航控制器系统边缘滑动手势监听的target
+    NSMutableArray *targets = [gesture valueForKeyPath:@"_targets"];
+    id gestureTarget = [targets firstObject];
+    id target = [gestureTarget valueForKeyPath:@"_target"];
     
-    NSLog(@"%@", self.interactivePopGestureRecognizer);
+    // 3.action:(滑动返回功能)handleNavigationTransition:
+    // 根据观察,导航控制器系统边缘滑动手势调用 target的handleNavigationTransition:方法
+    // 自定义手势也直接调用系统滑动手势调用的方法handleNavigationTransition:,实现全屏都可滑动
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
     
-    // 设置导航控制器的代理,目的是监听子控制器有没有完全显示
-    self.delegate = self;
+    [gesture.view addGestureRecognizer:pan];
+    
+    
+    
+//    // 设置导航控制器的代理,目的是监听子控制器有没有完全显示
+//    self.delegate = self;
 }
 
 // 当导航控制器的子控制器完全显示调用
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    // 判断是否是导航控制器的根控制器,如果是根控制器,则恢复代理,否则如果在导航控制器的根控制器中拖动,会出现假死状态
-    if (viewController == self.childViewControllers[0]) {
-        // 还原系统手势
-        self.interactivePopGestureRecognizer.delegate = _popDelegate;
-    }
-}
+//- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+//{
+//    // 判断是否是导航控制器的根控制器,如果是根控制器,则恢复代理,否则如果在导航控制器的根控制器中拖动,会出现假死状态
+//    if (viewController == self.childViewControllers[0]) {
+//        // 还原系统手势
+//        self.interactivePopGestureRecognizer.delegate = _popDelegate;
+//    }
+//}
 
 // 重写pushViewController方法,通过该方法实现统一修改导航栏左边的返回按钮
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
@@ -109,11 +119,9 @@
     // 判断是否是导航控制器的根控制器,如果是根控制器,则不添加导航条左边返回按钮
     if (self.childViewControllers.count != 0) {
         // 设置跳转的目标控制器的返回按钮为白色箭头的图片
-        // 以下操作覆盖了导航条系统自带的返回按钮,系统的边缘滑动功能失效,此方法不可行
+        // 以下操作覆盖了导航条系统自带的返回按钮,系统的边缘滑动功能失效,不会是自定义手势失效
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriginalImageName:@"NavBack"] style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonClick)];
         
-        // 如果是根控制器,取消系统手势代理
-        self.interactivePopGestureRecognizer.delegate = nil;
     }
     
     // 执行跳转操作
