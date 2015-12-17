@@ -87,6 +87,8 @@
     // 成员属性记录系统的手势
     _popDelegate = self.interactivePopGestureRecognizer.delegate;
     
+    NSLog(@"%@", self.interactivePopGestureRecognizer);
+    
     // 设置导航控制器的代理,目的是监听子控制器有没有完全显示
     self.delegate = self;
 }
