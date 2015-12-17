@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="158" y="302"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Buy View Controller-->
         <scene sceneID="dKQ-oS-AFg">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="T9H-z5-hwX" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="T9H-z5-hwX" customClass="WXBuyViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PvR-fP-0J7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9A4C56E1C22FAD900C24EF2 /* WXBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A4C56D1C22FAD900C24EF2 /* WXBuyViewController.m */; };
 		D9D335D51C21D362001F920E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D335D41C21D362001F920E /* Assets.xcassets */; };
 		D9D335E31C21D362001F920E /* LotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335E21C21D362001F920E /* LotteryTests.m */; };
 		D9D335EE1C21D362001F920E /* LotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335ED1C21D362001F920E /* LotteryUITests.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9A4C56C1C22FAD900C24EF2 /* WXBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBuyViewController.h; sourceTree = "<group>"; };
+		D9A4C56D1C22FAD900C24EF2 /* WXBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBuyViewController.m; sourceTree = "<group>"; };
 		D9D335C51C21D362001F920E /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D335D41C21D362001F920E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D335D91C21D362001F920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				D9D336081C21D3D7001F920E /* WXDiscoverViewController.h */,
 				D9D336091C21D3D7001F920E /* WXDiscoverViewController.m */,
 				D9D3360A1C21D3D7001F920E /* WXDiscoverViewController.storyboard */,
+				D9A4C56C1C22FAD900C24EF2 /* WXBuyViewController.h */,
+				D9A4C56D1C22FAD900C24EF2 /* WXBuyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 		D9D335BD1C21D362001F920E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WX;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Liwx;
 				TargetAttributes = {
@@ -572,6 +578,7 @@
 			files = (
 				D9D3363E1C21D3D7001F920E /* WXDiscoverViewController.m in Sources */,
 				D9D3363B1C21D3D7001F920E /* WXArenaNavigationController.m in Sources */,
+				D9A4C56E1C22FAD900C24EF2 /* WXBuyViewController.m in Sources */,
 				D9D336441C21D3D7001F920E /* WXHistoryViewController.m in Sources */,
 				D9D336411C21D3D7001F920E /* WXCover.m in Sources */,
 				D9D3364A1C21D3D7001F920E /* AppDelegate.m in Sources */,
@@ -808,6 +815,7 @@
 				D9D335F41C21D362001F920E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9D335F51C21D362001F920E /* Build configuration list for PBXNativeTarget "LotteryTests" */ = {
 			isa = XCConfigurationList;
@@ -816,6 +824,7 @@
 				D9D335F71C21D362001F920E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9D335F81C21D362001F920E /* Build configuration list for PBXNativeTarget "LotteryUITests" */ = {
 			isa = XCConfigurationList;
@@ -824,6 +833,7 @@
 				D9D335FA1C21D362001F920E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

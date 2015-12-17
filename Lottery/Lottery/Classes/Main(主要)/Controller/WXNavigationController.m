@@ -7,6 +7,7 @@
 //
 
 #import "WXNavigationController.h"
+#import "UIImage+Image.h"
 
 @implementation WXNavigationController
 
@@ -54,5 +55,28 @@
     }
   
 }
+
+// 重写pushViewController方法,通过该方法实现统一修改导航栏左边的返回按钮
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    // 判断是否是导航控制器的根控制器,如果是根控制器,则不添加导航条左边返回按钮
+    if (self.childViewControllers.count != 0) {
+        // 设置跳转的目标控制器的返回按钮为白色箭头的图片
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriginalImageName:@"NavBack"] style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonClick)];
+    }
+    
+    // 执行跳转操作
+    [super pushViewController:viewController animated:animated];
+}
+
+// 点击左边的按钮,执行popViewControllerAnimated操作
+- (void)leftBarButtonClick
+{
+    [self popViewControllerAnimated:YES];
+}
+
+
+
+
 
 @end
