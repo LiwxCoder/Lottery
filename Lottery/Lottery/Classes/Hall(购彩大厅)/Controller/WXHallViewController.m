@@ -21,6 +21,13 @@
 {
     [super viewDidLoad];
     
+    // 用这种方式创建系统不会渲染图片
+//    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [leftButton setImage:[UIImage imageNamed:@"CS50_activity_image"] forState:UIControlStateNormal];
+//    [leftButton sizeToFit];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    
+    // 用initWithTitle方法创建的系统会渲染图片 ,imageWithOriginalImageName生成一张最原始的图片,不渲染
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonItemStyleDone target:self action:@selector(activity)];
     // 设置导航条左边的按钮
     [self.navigationItem.leftBarButtonItem setImage:[UIImage imageWithOriginalImageName:@"CS50_activity_image"]];

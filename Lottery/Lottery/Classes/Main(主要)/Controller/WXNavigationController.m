@@ -107,7 +107,7 @@
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
     // 设置根控制器不能滑动 如果是根控制器,返回NO
-    return self.childViewControllers.count != 1;
+    return self.childViewControllers.count > 1;
 }
 
 // 重写pushViewController方法,通过该方法实现统一修改导航栏左边的返回按钮

@@ -31,6 +31,8 @@
 		D9D3364C1C21D3D7001F920E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D336371C21D3D7001F920E /* UIView+Frame.m */; };
 		D9D3364D1C21D3D7001F920E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3363A1C21D3D7001F920E /* main.m */; };
 		D9D336501C21D404001F920E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D3364E1C21D404001F920E /* LaunchScreen.storyboard */; };
+		D9F29CF61C24651F00255217 /* WXTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29CF51C24651F00255217 /* WXTitleView.m */; };
+		D9F29CF81C246A1800255217 /* WXMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,9 @@
 		D9D336391C21D3D7001F920E /* Lottery.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lottery.pch; sourceTree = "<group>"; };
 		D9D3363A1C21D3D7001F920E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9D3364F1C21D404001F920E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9F29CF41C24651F00255217 /* WXTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTitleView.h; sourceTree = "<group>"; };
+		D9F29CF51C24651F00255217 /* WXTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTitleView.m; sourceTree = "<group>"; };
+		D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXMyLotteryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +271,8 @@
 		D9D3360C1C21D3D7001F920E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D9F29CF41C24651F00255217 /* WXTitleView.h */,
+				D9F29CF51C24651F00255217 /* WXTitleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -395,6 +402,7 @@
 			children = (
 				D9D3362C1C21D3D7001F920E /* WXMyLotteryViewController.h */,
 				D9D3362D1C21D3D7001F920E /* WXMyLotteryViewController.m */,
+				D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -551,6 +559,7 @@
 				D9D336431C21D3D7001F920E /* WXPopMenu.xib in Resources */,
 				D9D336501C21D404001F920E /* LaunchScreen.storyboard in Resources */,
 				D9D335D51C21D362001F920E /* Assets.xcassets in Resources */,
+				D9F29CF81C246A1800255217 /* WXMyLotteryViewController.xib in Resources */,
 				D9D3363F1C21D3D7001F920E /* WXDiscoverViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +600,7 @@
 				D9D336421C21D3D7001F920E /* WXPopMenu.m in Sources */,
 				D9D3364C1C21D3D7001F920E /* UIView+Frame.m in Sources */,
 				D9D336481C21D3D7001F920E /* WXTabBarButton.m in Sources */,
+				D9F29CF61C24651F00255217 /* WXTitleView.m in Sources */,
 				D9D336491C21D3D7001F920E /* WXMyLotteryViewController.m in Sources */,
 				D9D336401C21D3D7001F920E /* WXHallViewController.m in Sources */,
 				D9D3363C1C21D3D7001F920E /* WXArenaViewController.m in Sources */,
