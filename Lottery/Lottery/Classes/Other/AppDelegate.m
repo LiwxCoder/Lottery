@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WXTabBarController.h"
 #import "WXGuideTool.h"
+#import "WXNewFeatureViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,14 +25,13 @@
     
     // 判断是否是新版本
     UIViewController *rootViewController = nil;
-    if ([WXGuideTool isNewVersion]) {
+//    if ([WXGuideTool isNewVersion]) {
         // 有新版本,window的根控制器为新特性控制器
-        rootViewController = [[UIViewController alloc] init];
-        rootViewController.view.backgroundColor = [UIColor redColor];
-    }else {
-        // 无新版本,window的根控制器为自定义TabBarController
-        rootViewController = [[WXTabBarController alloc] init];
-    }
+        rootViewController = [[WXNewFeatureViewController alloc] init];
+//    }else {
+//        // 无新版本,window的根控制器为自定义TabBarController
+//        rootViewController = [[WXTabBarController alloc] init];
+//    }
     
     // 设置窗口的根控制器
     self.window.rootViewController = rootViewController;

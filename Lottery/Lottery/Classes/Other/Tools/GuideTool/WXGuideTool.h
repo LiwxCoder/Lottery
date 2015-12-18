@@ -13,4 +13,6 @@
 + (BOOL)isNewVersion;
 /** 获取当前软件版本 */
 + (NSString *)getCurVersion;
+/** 获取最近一次的软件版本 */
++ (NSString *)getLastVersion;
 @end

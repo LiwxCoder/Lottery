@@ -18,9 +18,7 @@
     // 获取当前版本号
     NSString *curVersion = [self getCurVersion];
     // 获取上一个版本号
-    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] valueForKeyPath:kSystemVersion];
-    
-    NSLog(@"%@, %@", curVersion, lastVersion);
+    NSString *lastVersion = [self getLastVersion];
     
     // 若无新版本,则返回
     if ([curVersion isEqualToString:lastVersion]) return NO;
@@ -30,12 +28,17 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     return YES;
-
 }
 
 + (NSString *)getCurVersion
 {
+    // 返回当前版本号,是Info.plist对应的Bundle versions string, short
     return [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+}
+
++ (NSString *)getLastVersion
+{
+    return [[NSUserDefaults standardUserDefaults] valueForKeyPath:kSystemVersion];
 }
 
 @end

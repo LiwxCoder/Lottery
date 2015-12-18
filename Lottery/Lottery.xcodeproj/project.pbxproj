@@ -34,6 +34,7 @@
 		D9F29CF61C24651F00255217 /* WXTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29CF51C24651F00255217 /* WXTitleView.m */; };
 		D9F29CF81C246A1800255217 /* WXMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */; };
 		D9F29CFD1C24750900255217 /* WXGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29CFC1C24750900255217 /* WXGuideTool.m */; };
+		D9F29D041C247ACE00255217 /* WXNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29D031C247ACE00255217 /* WXNewFeatureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXMyLotteryViewController.xib; sourceTree = "<group>"; };
 		D9F29CFB1C24750900255217 /* WXGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGuideTool.h; sourceTree = "<group>"; };
 		D9F29CFC1C24750900255217 /* WXGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGuideTool.m; sourceTree = "<group>"; };
+		D9F29D021C247ACE00255217 /* WXNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureViewController.h; sourceTree = "<group>"; };
+		D9F29D031C247ACE00255217 /* WXNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,7 @@
 		D9D335FB1C21D3D7001F920E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D9F29CFE1C247AA300255217 /* NewFeature(新特性) */,
 				D9D335FC1C21D3D7001F920E /* Arena(竞技场) */,
 				D9D336061C21D3D7001F920E /* Discover(发现) */,
 				D9D3360D1C21D3D7001F920E /* Hall(购彩大厅) */,
@@ -473,6 +477,39 @@
 			path = GuideTool;
 			sourceTree = "<group>";
 		};
+		D9F29CFE1C247AA300255217 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				D9F29CFF1C247AA300255217 /* Controller */,
+				D9F29D001C247AA300255217 /* Model */,
+				D9F29D011C247AA300255217 /* View */,
+			);
+			path = "NewFeature(新特性)";
+			sourceTree = "<group>";
+		};
+		D9F29CFF1C247AA300255217 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9F29D021C247ACE00255217 /* WXNewFeatureViewController.h */,
+				D9F29D031C247ACE00255217 /* WXNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9F29D001C247AA300255217 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9F29D011C247AA300255217 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -624,6 +661,7 @@
 				D9F29CF61C24651F00255217 /* WXTitleView.m in Sources */,
 				D9D336491C21D3D7001F920E /* WXMyLotteryViewController.m in Sources */,
 				D9D336401C21D3D7001F920E /* WXHallViewController.m in Sources */,
+				D9F29D041C247ACE00255217 /* WXNewFeatureViewController.m in Sources */,
 				D9D3363C1C21D3D7001F920E /* WXArenaViewController.m in Sources */,
 				D9F29CFD1C24750900255217 /* WXGuideTool.m in Sources */,
 			);
