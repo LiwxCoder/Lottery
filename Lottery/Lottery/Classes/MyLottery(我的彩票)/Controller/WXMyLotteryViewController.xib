@@ -23,7 +23,7 @@
                         <constraint firstAttribute="width" constant="300" id="tML-hN-gOE"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otk-fF-xSo">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otk-fF-xSo">
                     <rect key="frame" x="37.5" y="308.5" width="300" height="34"/>
                     <state key="normal" title="登陆" backgroundImage="RedButton">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

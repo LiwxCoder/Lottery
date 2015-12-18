@@ -33,6 +33,7 @@
 		D9D336501C21D404001F920E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D3364E1C21D404001F920E /* LaunchScreen.storyboard */; };
 		D9F29CF61C24651F00255217 /* WXTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29CF51C24651F00255217 /* WXTitleView.m */; };
 		D9F29CF81C246A1800255217 /* WXMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */; };
+		D9F29CFD1C24750900255217 /* WXGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29CFC1C24750900255217 /* WXGuideTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		D9F29CF41C24651F00255217 /* WXTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTitleView.h; sourceTree = "<group>"; };
 		D9F29CF51C24651F00255217 /* WXTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTitleView.m; sourceTree = "<group>"; };
 		D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXMyLotteryViewController.xib; sourceTree = "<group>"; };
+		D9F29CFB1C24750900255217 /* WXGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGuideTool.h; sourceTree = "<group>"; };
+		D9F29CFC1C24750900255217 /* WXGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGuideTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +427,7 @@
 		D9D336301C21D3D7001F920E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D9F29CF91C24748A00255217 /* Tools */,
 				D9D336311C21D3D7001F920E /* AppDelegate.h */,
 				D9D336321C21D3D7001F920E /* AppDelegate.m */,
 				D9D336331C21D3D7001F920E /* Category */,
@@ -450,6 +454,23 @@
 				D9D336391C21D3D7001F920E /* Lottery.pch */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		D9F29CF91C24748A00255217 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D9F29CFA1C24748A00255217 /* GuideTool */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D9F29CFA1C24748A00255217 /* GuideTool */ = {
+			isa = PBXGroup;
+			children = (
+				D9F29CFB1C24750900255217 /* WXGuideTool.h */,
+				D9F29CFC1C24750900255217 /* WXGuideTool.m */,
+			);
+			path = GuideTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -604,6 +625,7 @@
 				D9D336491C21D3D7001F920E /* WXMyLotteryViewController.m in Sources */,
 				D9D336401C21D3D7001F920E /* WXHallViewController.m in Sources */,
 				D9D3363C1C21D3D7001F920E /* WXArenaViewController.m in Sources */,
+				D9F29CFD1C24750900255217 /* WXGuideTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
