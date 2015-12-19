@@ -9,6 +9,8 @@
 #import "WXAwardViewController.h"
 #import "WXSwitchSettingItem.h"
 
+// TODO: 开奖推送修改cell子标题文字大小
+
 @implementation WXAwardViewController
 
 - (void)viewDidLoad
