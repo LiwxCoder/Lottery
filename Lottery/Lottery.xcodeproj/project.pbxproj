@@ -7,9 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D955E60D1C25B5E500A47220 /* WXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E60C1C25B5E500A47220 /* WXBlurView.m */; };
+		D955E61A1C25B7BC00A47220 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E6111C25B7BC00A47220 /* DRNRealTimeBlurView.m */; };
+		D955E61B1C25B7BC00A47220 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E6131C25B7BC00A47220 /* UIImage+BoxBlur.m */; };
+		D955E61D1C25B7BC00A47220 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D955E6171C25B7BC00A47220 /* MBProgressHUD.bundle */; };
+		D955E61E1C25B7BC00A47220 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E6191C25B7BC00A47220 /* MBProgressHUD.m */; };
+		D955E6211C25B90900A47220 /* MBProgressHUD+WX.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E6201C25B90900A47220 /* MBProgressHUD+WX.m */; };
+		D955E6241C25BADF00A47220 /* WXSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E6231C25BADF00A47220 /* WXSettingCell.m */; };
+		D955E6271C25C44900A47220 /* WXBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E6261C25C44900A47220 /* WXBaseSettingViewController.m */; };
+		D955E62A1C25C72800A47220 /* WXPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E6291C25C72800A47220 /* WXPushViewController.m */; };
+		D955E62E1C25C9AE00A47220 /* WXAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D955E62D1C25C9AE00A47220 /* WXAwardViewController.m */; };
 		D9A4C56E1C22FAD900C24EF2 /* WXBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A4C56D1C22FAD900C24EF2 /* WXBuyViewController.m */; };
 		D9B0A43D1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A43C1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m */; };
 		D9B0A4401C25146000811C03 /* WXNewFeatureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A43F1C25146000811C03 /* WXNewFeatureItem.m */; };
+		D9BBF25E1C2594AC00C7EF11 /* WXSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF25D1C2594AC00C7EF11 /* WXSaveTool.m */; };
+		D9BBF2611C25985400C7EF11 /* WXGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF2601C25985400C7EF11 /* WXGuideTool.m */; };
+		D9BBF2681C259FD600C7EF11 /* WXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF2671C259FD600C7EF11 /* WXSettingViewController.m */; };
+		D9BBF26B1C259FFF00C7EF11 /* WXSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF26A1C259FFF00C7EF11 /* WXSettingItem.m */; };
+		D9BBF26E1C25A18000C7EF11 /* WXGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF26D1C25A18000C7EF11 /* WXGroupItem.m */; };
+		D9BBF2711C25AAEF00C7EF11 /* WXArrowSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF2701C25AAEF00C7EF11 /* WXArrowSettingItem.m */; };
+		D9BBF2741C25AF7C00C7EF11 /* WXSwitchSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF2731C25AF7C00C7EF11 /* WXSwitchSettingItem.m */; };
 		D9D335D51C21D362001F920E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D335D41C21D362001F920E /* Assets.xcassets */; };
 		D9D335E31C21D362001F920E /* LotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335E21C21D362001F920E /* LotteryTests.m */; };
 		D9D335EE1C21D362001F920E /* LotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335ED1C21D362001F920E /* LotteryUITests.m */; };
@@ -35,7 +52,6 @@
 		D9D336501C21D404001F920E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D3364E1C21D404001F920E /* LaunchScreen.storyboard */; };
 		D9F29CF61C24651F00255217 /* WXTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29CF51C24651F00255217 /* WXTitleView.m */; };
 		D9F29CF81C246A1800255217 /* WXMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */; };
-		D9F29CFD1C24750900255217 /* WXGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29CFC1C24750900255217 /* WXGuideTool.m */; };
 		D9F29D041C247ACE00255217 /* WXNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F29D031C247ACE00255217 /* WXNewFeatureViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +73,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D955E60B1C25B5E500A47220 /* WXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBlurView.h; sourceTree = "<group>"; };
+		D955E60C1C25B5E500A47220 /* WXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBlurView.m; sourceTree = "<group>"; };
+		D955E6101C25B7BC00A47220 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		D955E6111C25B7BC00A47220 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		D955E6121C25B7BC00A47220 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		D955E6131C25B7BC00A47220 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		D955E6171C25B7BC00A47220 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		D955E6181C25B7BC00A47220 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D955E6191C25B7BC00A47220 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D955E61F1C25B90900A47220 /* MBProgressHUD+WX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+WX.h"; sourceTree = "<group>"; };
+		D955E6201C25B90900A47220 /* MBProgressHUD+WX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+WX.m"; sourceTree = "<group>"; };
+		D955E6221C25BADF00A47220 /* WXSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSettingCell.h; sourceTree = "<group>"; };
+		D955E6231C25BADF00A47220 /* WXSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSettingCell.m; sourceTree = "<group>"; };
+		D955E6251C25C44900A47220 /* WXBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBaseSettingViewController.h; sourceTree = "<group>"; };
+		D955E6261C25C44900A47220 /* WXBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBaseSettingViewController.m; sourceTree = "<group>"; };
+		D955E6281C25C72800A47220 /* WXPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPushViewController.h; sourceTree = "<group>"; };
+		D955E6291C25C72800A47220 /* WXPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPushViewController.m; sourceTree = "<group>"; };
+		D955E62C1C25C9AE00A47220 /* WXAwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAwardViewController.h; sourceTree = "<group>"; };
+		D955E62D1C25C9AE00A47220 /* WXAwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXAwardViewController.m; sourceTree = "<group>"; };
 		D9A4C56C1C22FAD900C24EF2 /* WXBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBuyViewController.h; sourceTree = "<group>"; };
 		D9A4C56D1C22FAD900C24EF2 /* WXBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBuyViewController.m; sourceTree = "<group>"; };
 		D9B0A43B1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureCollectionViewCell.h; sourceTree = "<group>"; };
 		D9B0A43C1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureCollectionViewCell.m; sourceTree = "<group>"; };
 		D9B0A43E1C25146000811C03 /* WXNewFeatureItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureItem.h; sourceTree = "<group>"; };
 		D9B0A43F1C25146000811C03 /* WXNewFeatureItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureItem.m; sourceTree = "<group>"; };
+		D9BBF25C1C2594AC00C7EF11 /* WXSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSaveTool.h; sourceTree = "<group>"; };
+		D9BBF25D1C2594AC00C7EF11 /* WXSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSaveTool.m; sourceTree = "<group>"; };
+		D9BBF25F1C25985400C7EF11 /* WXGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGuideTool.h; sourceTree = "<group>"; };
+		D9BBF2601C25985400C7EF11 /* WXGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGuideTool.m; sourceTree = "<group>"; };
+		D9BBF2661C259FD600C7EF11 /* WXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSettingViewController.h; sourceTree = "<group>"; };
+		D9BBF2671C259FD600C7EF11 /* WXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSettingViewController.m; sourceTree = "<group>"; };
+		D9BBF2691C259FFF00C7EF11 /* WXSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSettingItem.h; sourceTree = "<group>"; };
+		D9BBF26A1C259FFF00C7EF11 /* WXSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSettingItem.m; sourceTree = "<group>"; };
+		D9BBF26C1C25A18000C7EF11 /* WXGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGroupItem.h; sourceTree = "<group>"; };
+		D9BBF26D1C25A18000C7EF11 /* WXGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGroupItem.m; sourceTree = "<group>"; };
+		D9BBF26F1C25AAEF00C7EF11 /* WXArrowSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXArrowSettingItem.h; sourceTree = "<group>"; };
+		D9BBF2701C25AAEF00C7EF11 /* WXArrowSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXArrowSettingItem.m; sourceTree = "<group>"; };
+		D9BBF2721C25AF7C00C7EF11 /* WXSwitchSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSwitchSettingItem.h; sourceTree = "<group>"; };
+		D9BBF2731C25AF7C00C7EF11 /* WXSwitchSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSwitchSettingItem.m; sourceTree = "<group>"; };
 		D9D335C51C21D362001F920E /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D335D41C21D362001F920E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D335D91C21D362001F920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,8 +161,6 @@
 		D9F29CF41C24651F00255217 /* WXTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTitleView.h; sourceTree = "<group>"; };
 		D9F29CF51C24651F00255217 /* WXTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTitleView.m; sourceTree = "<group>"; };
 		D9F29CF71C246A1800255217 /* WXMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXMyLotteryViewController.xib; sourceTree = "<group>"; };
-		D9F29CFB1C24750900255217 /* WXGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGuideTool.h; sourceTree = "<group>"; };
-		D9F29CFC1C24750900255217 /* WXGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGuideTool.m; sourceTree = "<group>"; };
 		D9F29D021C247ACE00255217 /* WXNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureViewController.h; sourceTree = "<group>"; };
 		D9F29D031C247ACE00255217 /* WXNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +190,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D955E60E1C25B7BC00A47220 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D955E60F1C25B7BC00A47220 /* DRNRealTimeBlurView */,
+				D955E6141C25B7BC00A47220 /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D955E60F1C25B7BC00A47220 /* DRNRealTimeBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				D955E6101C25B7BC00A47220 /* DRNRealTimeBlurView.h */,
+				D955E6111C25B7BC00A47220 /* DRNRealTimeBlurView.m */,
+				D955E6121C25B7BC00A47220 /* UIImage+BoxBlur.h */,
+				D955E6131C25B7BC00A47220 /* UIImage+BoxBlur.m */,
+			);
+			path = DRNRealTimeBlurView;
+			sourceTree = "<group>";
+		};
+		D955E6141C25B7BC00A47220 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D955E6171C25B7BC00A47220 /* MBProgressHUD.bundle */,
+				D955E6181C25B7BC00A47220 /* MBProgressHUD.h */,
+				D955E6191C25B7BC00A47220 /* MBProgressHUD.m */,
+				D955E61F1C25B90900A47220 /* MBProgressHUD+WX.h */,
+				D955E6201C25B90900A47220 /* MBProgressHUD+WX.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		D955E62B1C25C98100A47220 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				D955E62C1C25C9AE00A47220 /* WXAwardViewController.h */,
+				D955E62D1C25C9AE00A47220 /* WXAwardViewController.m */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
+		D9BBF2591C25948F00C7EF11 /* Tools(业务逻辑) */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBF25A1C25948F00C7EF11 /* Guide */,
+				D9BBF25B1C25948F00C7EF11 /* Save */,
+			);
+			path = "Tools(业务逻辑)";
+			sourceTree = "<group>";
+		};
+		D9BBF25A1C25948F00C7EF11 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBF25F1C25985400C7EF11 /* WXGuideTool.h */,
+				D9BBF2601C25985400C7EF11 /* WXGuideTool.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		D9BBF25B1C25948F00C7EF11 /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBF25C1C2594AC00C7EF11 /* WXSaveTool.h */,
+				D9BBF25D1C2594AC00C7EF11 /* WXSaveTool.m */,
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
+		D9BBF2621C259FB000C7EF11 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBF2631C259FB000C7EF11 /* Controller */,
+				D9BBF2641C259FB000C7EF11 /* Model */,
+				D9BBF2651C259FB000C7EF11 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		D9BBF2631C259FB000C7EF11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D955E62B1C25C98100A47220 /* Push */,
+				D9BBF2661C259FD600C7EF11 /* WXSettingViewController.h */,
+				D9BBF2671C259FD600C7EF11 /* WXSettingViewController.m */,
+				D955E6251C25C44900A47220 /* WXBaseSettingViewController.h */,
+				D955E6261C25C44900A47220 /* WXBaseSettingViewController.m */,
+				D955E6281C25C72800A47220 /* WXPushViewController.h */,
+				D955E6291C25C72800A47220 /* WXPushViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9BBF2641C259FB000C7EF11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBF2691C259FFF00C7EF11 /* WXSettingItem.h */,
+				D9BBF26A1C259FFF00C7EF11 /* WXSettingItem.m */,
+				D9BBF26C1C25A18000C7EF11 /* WXGroupItem.h */,
+				D9BBF26D1C25A18000C7EF11 /* WXGroupItem.m */,
+				D9BBF26F1C25AAEF00C7EF11 /* WXArrowSettingItem.h */,
+				D9BBF2701C25AAEF00C7EF11 /* WXArrowSettingItem.m */,
+				D9BBF2721C25AF7C00C7EF11 /* WXSwitchSettingItem.h */,
+				D9BBF2731C25AF7C00C7EF11 /* WXSwitchSettingItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9BBF2651C259FB000C7EF11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D955E60B1C25B5E500A47220 /* WXBlurView.h */,
+				D955E60C1C25B5E500A47220 /* WXBlurView.m */,
+				D955E6221C25BADF00A47220 /* WXSettingCell.h */,
+				D955E6231C25BADF00A47220 /* WXSettingCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D9D335BC1C21D362001F920E = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +368,8 @@
 		D9D335FB1C21D3D7001F920E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D9BBF2621C259FB000C7EF11 /* Setting(设置) */,
+				D9BBF2591C25948F00C7EF11 /* Tools(业务逻辑) */,
 				D9F29CFE1C247AA300255217 /* NewFeature(新特性) */,
 				D9D335FC1C21D3D7001F920E /* Arena(竞技场) */,
 				D9D336061C21D3D7001F920E /* Discover(发现) */,
@@ -437,7 +604,7 @@
 		D9D336301C21D3D7001F920E /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				D9F29CF91C24748A00255217 /* Tools */,
+				D955E60E1C25B7BC00A47220 /* Lib */,
 				D9D336311C21D3D7001F920E /* AppDelegate.h */,
 				D9D336321C21D3D7001F920E /* AppDelegate.m */,
 				D9D336331C21D3D7001F920E /* Category */,
@@ -464,23 +631,6 @@
 				D9D336391C21D3D7001F920E /* Lottery.pch */,
 			);
 			path = Global;
-			sourceTree = "<group>";
-		};
-		D9F29CF91C24748A00255217 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				D9F29CFA1C24748A00255217 /* GuideTool */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		D9F29CFA1C24748A00255217 /* GuideTool */ = {
-			isa = PBXGroup;
-			children = (
-				D9F29CFB1C24750900255217 /* WXGuideTool.h */,
-				D9F29CFC1C24750900255217 /* WXGuideTool.m */,
-			);
-			path = GuideTool;
 			sourceTree = "<group>";
 		};
 		D9F29CFE1C247AA300255217 /* NewFeature(新特性) */ = {
@@ -629,6 +779,7 @@
 				D9D335D51C21D362001F920E /* Assets.xcassets in Resources */,
 				D9F29CF81C246A1800255217 /* WXMyLotteryViewController.xib in Resources */,
 				D9D3363F1C21D3D7001F920E /* WXDiscoverViewController.storyboard in Resources */,
+				D955E61D1C25B7BC00A47220 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,26 +807,41 @@
 				D9D3363E1C21D3D7001F920E /* WXDiscoverViewController.m in Sources */,
 				D9D3363B1C21D3D7001F920E /* WXArenaNavigationController.m in Sources */,
 				D9A4C56E1C22FAD900C24EF2 /* WXBuyViewController.m in Sources */,
+				D9BBF2611C25985400C7EF11 /* WXGuideTool.m in Sources */,
 				D9D336441C21D3D7001F920E /* WXHistoryViewController.m in Sources */,
 				D9D336411C21D3D7001F920E /* WXCover.m in Sources */,
+				D9BBF2711C25AAEF00C7EF11 /* WXArrowSettingItem.m in Sources */,
+				D955E6271C25C44900A47220 /* WXBaseSettingViewController.m in Sources */,
+				D955E61E1C25B7BC00A47220 /* MBProgressHUD.m in Sources */,
 				D9D3364A1C21D3D7001F920E /* AppDelegate.m in Sources */,
+				D955E60D1C25B5E500A47220 /* WXBlurView.m in Sources */,
+				D9BBF2681C259FD600C7EF11 /* WXSettingViewController.m in Sources */,
 				D9D3363D1C21D3D7001F920E /* WXArenaView.m in Sources */,
 				D9B0A4401C25146000811C03 /* WXNewFeatureItem.m in Sources */,
+				D9BBF26B1C259FFF00C7EF11 /* WXSettingItem.m in Sources */,
 				D9D336461C21D3D7001F920E /* WXTabBarController.m in Sources */,
+				D955E62A1C25C72800A47220 /* WXPushViewController.m in Sources */,
 				D9D3364D1C21D3D7001F920E /* main.m in Sources */,
 				D9D3364B1C21D3D7001F920E /* UIImage+Image.m in Sources */,
 				D9D336471C21D3D7001F920E /* WXTabBar.m in Sources */,
+				D955E6241C25BADF00A47220 /* WXSettingCell.m in Sources */,
 				D9D336451C21D3D7001F920E /* WXNavigationController.m in Sources */,
+				D9BBF2741C25AF7C00C7EF11 /* WXSwitchSettingItem.m in Sources */,
+				D955E62E1C25C9AE00A47220 /* WXAwardViewController.m in Sources */,
 				D9B0A43D1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m in Sources */,
 				D9D336421C21D3D7001F920E /* WXPopMenu.m in Sources */,
 				D9D3364C1C21D3D7001F920E /* UIView+Frame.m in Sources */,
+				D955E61B1C25B7BC00A47220 /* UIImage+BoxBlur.m in Sources */,
 				D9D336481C21D3D7001F920E /* WXTabBarButton.m in Sources */,
+				D955E6211C25B90900A47220 /* MBProgressHUD+WX.m in Sources */,
+				D955E61A1C25B7BC00A47220 /* DRNRealTimeBlurView.m in Sources */,
+				D9BBF26E1C25A18000C7EF11 /* WXGroupItem.m in Sources */,
 				D9F29CF61C24651F00255217 /* WXTitleView.m in Sources */,
 				D9D336491C21D3D7001F920E /* WXMyLotteryViewController.m in Sources */,
 				D9D336401C21D3D7001F920E /* WXHallViewController.m in Sources */,
 				D9F29D041C247ACE00255217 /* WXNewFeatureViewController.m in Sources */,
+				D9BBF25E1C2594AC00C7EF11 /* WXSaveTool.m in Sources */,
 				D9D3363C1C21D3D7001F920E /* WXArenaViewController.m in Sources */,
-				D9F29CFD1C24750900255217 /* WXGuideTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

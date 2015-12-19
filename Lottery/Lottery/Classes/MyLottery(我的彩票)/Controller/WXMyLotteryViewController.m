@@ -7,6 +7,7 @@
 //
 
 #import "WXMyLotteryViewController.h"
+#import "WXSettingViewController.h"
 
 @interface WXMyLotteryViewController ()
 
@@ -32,16 +33,6 @@
     
 }
 
-- (void)setRightButton
-{
-    // 设置右边设置按钮
-    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightButton setImage:[UIImage imageNamed:@"Mylottery_config"] forState:UIControlStateNormal];
-    [rightButton sizeToFit];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-}
-
 - (void)setLeftButton
 {
     // 设置左边客服按钮
@@ -51,6 +42,23 @@
     [leftButton sizeToFit];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+}
+
+- (void)setRightButton
+{
+    // 设置右边设置按钮
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightButton setImage:[UIImage imageNamed:@"Mylottery_config"] forState:UIControlStateNormal];
+    [rightButton sizeToFit];
+    [rightButton addTarget:self action:@selector(rightButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+}
+
+- (void)rightButtonClick
+{
+    [self.navigationController pushViewController:[[WXSettingViewController alloc] init] animated:YES];
+    
 }
 
 - (void)setLoginView

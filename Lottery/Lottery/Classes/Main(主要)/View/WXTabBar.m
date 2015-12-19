@@ -81,6 +81,7 @@
         tabBarButton.frame = CGRectMake(btnX, btnY, btnW, btnH);
         
     }
+    
 }
 
 @end

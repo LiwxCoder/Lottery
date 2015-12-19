@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "WXTabBarController.h"
-#import "WXGuideTool.h"
 #import "WXNewFeatureViewController.h"
+#import "WXGuideTool.h"
 
 @interface AppDelegate ()
 
@@ -22,19 +22,8 @@
     // 创建UIWindow
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    
-    // 判断是否是新版本
-    UIViewController *rootViewController = nil;
-//    if ([WXGuideTool isNewVersion]) {
-        // 有新版本,window的根控制器为新特性控制器
-        rootViewController = [[WXNewFeatureViewController alloc] init];
-//    }else {
-//        // 无新版本,window的根控制器为自定义TabBarController
-//        rootViewController = [[WXTabBarController alloc] init];
-//    }
-    
-    // 设置窗口的根控制器
-    self.window.rootViewController = rootViewController;
+    // 设置窗口的根控制器,根据版本号选择程序启动跳转的控制器(新特性控制器/主框架界面)
+    self.window.rootViewController = [WXGuideTool chooseRootViewController];
     
     // 让窗口显示
     [self.window makeKeyAndVisible];
