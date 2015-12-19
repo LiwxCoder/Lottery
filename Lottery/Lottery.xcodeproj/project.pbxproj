@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D9A4C56E1C22FAD900C24EF2 /* WXBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A4C56D1C22FAD900C24EF2 /* WXBuyViewController.m */; };
+		D9B0A43D1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A43C1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m */; };
+		D9B0A4401C25146000811C03 /* WXNewFeatureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A43F1C25146000811C03 /* WXNewFeatureItem.m */; };
 		D9D335D51C21D362001F920E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D335D41C21D362001F920E /* Assets.xcassets */; };
 		D9D335E31C21D362001F920E /* LotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335E21C21D362001F920E /* LotteryTests.m */; };
 		D9D335EE1C21D362001F920E /* LotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335ED1C21D362001F920E /* LotteryUITests.m */; };
@@ -57,6 +59,10 @@
 /* Begin PBXFileReference section */
 		D9A4C56C1C22FAD900C24EF2 /* WXBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBuyViewController.h; sourceTree = "<group>"; };
 		D9A4C56D1C22FAD900C24EF2 /* WXBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBuyViewController.m; sourceTree = "<group>"; };
+		D9B0A43B1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureCollectionViewCell.h; sourceTree = "<group>"; };
+		D9B0A43C1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureCollectionViewCell.m; sourceTree = "<group>"; };
+		D9B0A43E1C25146000811C03 /* WXNewFeatureItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureItem.h; sourceTree = "<group>"; };
+		D9B0A43F1C25146000811C03 /* WXNewFeatureItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureItem.m; sourceTree = "<group>"; };
 		D9D335C51C21D362001F920E /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D335D41C21D362001F920E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D335D91C21D362001F920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -499,6 +505,8 @@
 		D9F29D001C247AA300255217 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D9B0A43E1C25146000811C03 /* WXNewFeatureItem.h */,
+				D9B0A43F1C25146000811C03 /* WXNewFeatureItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -506,6 +514,8 @@
 		D9F29D011C247AA300255217 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D9B0A43B1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.h */,
+				D9B0A43C1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -650,11 +660,13 @@
 				D9D336411C21D3D7001F920E /* WXCover.m in Sources */,
 				D9D3364A1C21D3D7001F920E /* AppDelegate.m in Sources */,
 				D9D3363D1C21D3D7001F920E /* WXArenaView.m in Sources */,
+				D9B0A4401C25146000811C03 /* WXNewFeatureItem.m in Sources */,
 				D9D336461C21D3D7001F920E /* WXTabBarController.m in Sources */,
 				D9D3364D1C21D3D7001F920E /* main.m in Sources */,
 				D9D3364B1C21D3D7001F920E /* UIImage+Image.m in Sources */,
 				D9D336471C21D3D7001F920E /* WXTabBar.m in Sources */,
 				D9D336451C21D3D7001F920E /* WXNavigationController.m in Sources */,
+				D9B0A43D1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m in Sources */,
 				D9D336421C21D3D7001F920E /* WXPopMenu.m in Sources */,
 				D9D3364C1C21D3D7001F920E /* UIView+Frame.m in Sources */,
 				D9D336481C21D3D7001F920E /* WXTabBarButton.m in Sources */,
