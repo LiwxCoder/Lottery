@@ -67,13 +67,15 @@
     WXGroupItem *group = self.groups[indexPath.section];
     WXSettingItem *item = group.items[indexPath.row];
     
+    // 如果设置block,执行block后直接退出,若后面有push操作,无需执行push
+    if (item.operationBlock) {
+        item.operationBlock(indexPath);
+        return;
+    }
+    
     if ([item isKindOfClass:[WXArrowSettingItem class]]) {
         WXArrowSettingItem *arrowItem = (WXArrowSettingItem *)item;
-        // 设置block优先级高于跳转控制器
-        if (arrowItem.operationBlock) {
-            // 执行block
-            arrowItem.operationBlock(indexPath);
-        }else if (arrowItem.descVcClass){
+        if (arrowItem.descVcClass){
             // 若无设置block则执行跳转操作
             [self.navigationController pushViewController:[[arrowItem.descVcClass alloc] init] animated:YES];
         }

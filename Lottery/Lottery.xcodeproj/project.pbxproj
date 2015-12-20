@@ -27,6 +27,7 @@
 		D9BBF26E1C25A18000C7EF11 /* WXGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF26D1C25A18000C7EF11 /* WXGroupItem.m */; };
 		D9BBF2711C25AAEF00C7EF11 /* WXArrowSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF2701C25AAEF00C7EF11 /* WXArrowSettingItem.m */; };
 		D9BBF2741C25AF7C00C7EF11 /* WXSwitchSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF2731C25AF7C00C7EF11 /* WXSwitchSettingItem.m */; };
+		D9BC1C231C2636C9000E9976 /* WXScoreSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BC1C221C2636C9000E9976 /* WXScoreSettingViewController.m */; };
 		D9D335D51C21D362001F920E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D335D41C21D362001F920E /* Assets.xcassets */; };
 		D9D335E31C21D362001F920E /* LotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335E21C21D362001F920E /* LotteryTests.m */; };
 		D9D335EE1C21D362001F920E /* LotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D335ED1C21D362001F920E /* LotteryUITests.m */; };
@@ -112,6 +113,8 @@
 		D9BBF2701C25AAEF00C7EF11 /* WXArrowSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXArrowSettingItem.m; sourceTree = "<group>"; };
 		D9BBF2721C25AF7C00C7EF11 /* WXSwitchSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSwitchSettingItem.h; sourceTree = "<group>"; };
 		D9BBF2731C25AF7C00C7EF11 /* WXSwitchSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSwitchSettingItem.m; sourceTree = "<group>"; };
+		D9BC1C211C2636C9000E9976 /* WXScoreSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXScoreSettingViewController.h; sourceTree = "<group>"; };
+		D9BC1C221C2636C9000E9976 /* WXScoreSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXScoreSettingViewController.m; sourceTree = "<group>"; };
 		D9D335C51C21D362001F920E /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D335D41C21D362001F920E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D335D91C21D362001F920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 			children = (
 				D955E62C1C25C9AE00A47220 /* WXAwardViewController.h */,
 				D955E62D1C25C9AE00A47220 /* WXAwardViewController.m */,
+				D9BC1C211C2636C9000E9976 /* WXScoreSettingViewController.h */,
+				D9BC1C221C2636C9000E9976 /* WXScoreSettingViewController.m */,
 			);
 			path = Push;
 			sourceTree = "<group>";
@@ -826,6 +831,7 @@
 				D9D336471C21D3D7001F920E /* WXTabBar.m in Sources */,
 				D955E6241C25BADF00A47220 /* WXSettingCell.m in Sources */,
 				D9D336451C21D3D7001F920E /* WXNavigationController.m in Sources */,
+				D9BC1C231C2636C9000E9976 /* WXScoreSettingViewController.m in Sources */,
 				D9BBF2741C25AF7C00C7EF11 /* WXSwitchSettingItem.m in Sources */,
 				D955E62E1C25C9AE00A47220 /* WXAwardViewController.m in Sources */,
 				D9B0A43D1C24FE2000811C03 /* WXNewFeatureCollectionViewCell.m in Sources */,

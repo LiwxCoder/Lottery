@@ -50,7 +50,11 @@
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // 获取不同样式的cell
     WXSettingCell *cell = [WXSettingCell settingCellWithTableView:tableView style:UITableViewCellStyleSubtitle];
+    
+    // 设置子标题的字体大小
+    cell.detailTextLabel.font = [UIFont systemFontOfSize:8];
     
     // 获取数据
     WXGroupItem *group = self.groups[indexPath.section];

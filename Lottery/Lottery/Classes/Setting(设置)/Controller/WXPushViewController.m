@@ -9,6 +9,7 @@
 #import "WXPushViewController.h"
 #import "WXSwitchSettingItem.h"
 #import "WXAwardViewController.h"
+#import "WXScoreSettingViewController.h"
 
 @implementation WXPushViewController
 
@@ -32,6 +33,11 @@
         [self.navigationController pushViewController:awardVc animated:YES];
     };
     WXArrowSettingItem *item1 = [WXArrowSettingItem settingItemWithTitle:@"比分直播推送"];
+    item1.operationBlock = ^(NSIndexPath *indexPath){
+        WXScoreSettingViewController *scoreVc = [[WXScoreSettingViewController alloc] init];
+        scoreVc.title = @"比分直播推送";
+        [self.navigationController pushViewController:scoreVc animated:YES];
+    };
     WXArrowSettingItem *item2 = [WXArrowSettingItem settingItemWithTitle:@"中奖动画" ];
     WXArrowSettingItem *item3 = [WXArrowSettingItem settingItemWithTitle:@"购彩提醒" ];
     // 添加行模型到数组
