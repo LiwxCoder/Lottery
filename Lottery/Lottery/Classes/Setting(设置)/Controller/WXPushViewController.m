@@ -22,7 +22,6 @@
     [self setUpGroup0];
 }
 
-
 - (void)setUpGroup0
 {
     // 创建行模型
