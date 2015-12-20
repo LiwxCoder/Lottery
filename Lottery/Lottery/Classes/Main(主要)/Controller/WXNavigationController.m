@@ -137,5 +137,72 @@
 
 
 
+// 边缘拖动方式二
+/*
+ + (void)initialize
+ {
+ if(self == [WXNavigationController class]) {
+ UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self, nil];
+ // 投机小技巧,将导航条的主题改成白色的,并把文字移除屏幕
+ [bar setTintColor:[UIColor whiteColor]];
+ 
+ // 将文字移除屏幕
+ UIBarButtonItem *barButtonItem = [UIBarButtonItem appearanceWhenContainedIn:self, nil];
+ [barButtonItem setBackButtonTitlePositionAdjustment:UIOffsetMake(-100, 0) forBarMetrics:UIBarMetricsDefault];
+ 
+ }
+ }
+ // 重写push方法,在push方法中添加非根控制器下,底部TabBar隐藏功能
+ - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+ {
+ if (self.childViewControllers.count > 0) {
+ // 隐藏底部TabBar
+ viewController.hidesBottomBarWhenPushed = YES;
+ 
+ }
+ 
+ [super pushViewController:viewController animated:animated];
+ }
+ */
+
+
+// 边缘拖动方式一
+/*
+ - (void)viewDidLoad
+ {
+ [super viewDidLoad];
+ 
+ // 用成员属性记录当前导航控制器手势代理
+ self.popDelegate = self.interactivePopGestureRecognizer.delegate;
+ // 目的是为了从didShowViewController:animated:导航控制器完全显示代理方法中,还原和清空系统手势代理操作
+ self.delegate = self;
+ }
+ 
+ - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+ {
+ if (self.childViewControllers.count > 0) {
+ // 设置返回按钮图标,imageWithOriginalImageName设置图片不渲染
+ viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriginalImageName:@"NavBack"] style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonClick)];
+ // 隐藏底部TabBar
+ viewController.hidesBottomBarWhenPushed = YES;
+ 
+ }
+ [super pushViewController:viewController animated:animated];
+ }
+ 
+ // 导航控制器完全显示的时候调用
+ - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+ {
+ // 判断是否是根控制器
+ if(self.childViewControllers[0] == viewController) {
+ // 还原代理
+ self.interactivePopGestureRecognizer.delegate = self.popDelegate;
+ }else {
+ // 清空代理
+ self.interactivePopGestureRecognizer.delegate = nil;
+ }
+ }
+ */
+
 
 @end
