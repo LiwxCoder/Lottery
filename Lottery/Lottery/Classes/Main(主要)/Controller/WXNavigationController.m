@@ -135,6 +135,90 @@
 }
 
 
+// 全屏拖动方式三
+// 方式三,全屏拖动
+//- (void)viewDidLoad
+//{
+//    [super viewDidLoad];
+//    
+//    // 打印系统的手势, 利用KVC获取系统调用的target
+//    // 系统手势类型为UIScreenEdgePanGestureRecognizer
+//    // 执行action: handleNavigationTransition:方法
+//    // target获取步骤:
+//    /**
+//     *  <UIScreenEdgePanGestureRecognizer: 0x7f98f262f870; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7f98f25d2570>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7f98f262f290>)>>
+//     */
+//    // 打印系统手势类型等信息
+//    // NSLog(@"%@", self.interactivePopGestureRecognizer);
+//    // 观察系统手势类型为UIScreenEdgePanGestureRecognizer
+//    UIScreenEdgePanGestureRecognizer *gesture = (UIScreenEdgePanGestureRecognizer *)self.interactivePopGestureRecognizer;
+//    
+//    // 禁用系统的手势
+//    gesture.enabled = NO;
+//    
+//    /**
+//     *   (
+//     "(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7fe93142da50>)"
+//     )
+//     */
+//    // targets是数组
+//    NSMutableArray *targets = [gesture valueForKeyPath:@"_targets"];
+//    // NSLog(@"%@", targets);
+//    
+//    // 取出数组中得元素,以上打印只有一个元素
+//    id gestureTarget = [targets firstObject];
+//    
+//    /**
+//     *   "<_UINavigationInteractiveTransition: 0x7fccbb538840>"
+//     */
+//    // 获取到target
+//    id target = [gestureTarget valueForKeyPath:@"_target"];
+//    // NSLog(@"%@", target);
+//    
+//    // 3.action:(滑动返回功能)handleNavigationTransition:
+//    // 根据观察,导航控制器系统边缘滑动手势调用 target的handleNavigationTransition:方法
+//    // 自定义手势也直接调用系统滑动手势调用的方法handleNavigationTransition:,实现全屏都可滑动
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+//    
+//    // 设置拖动手势代理,目的是为了让导航控制器的根控制器不能拖动,遵守协议UIGestureRecognizerDelegate
+//    pan.delegate = self;
+//    
+//    // 添加到系统手势所在的view上
+//    [gesture.view addGestureRecognizer:pan];
+//    
+//}
+//
+//// 判断是否允许触发手势
+//- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+//{
+//    // 设置根控制器不能滑动 如果是根控制器,返回NO
+//    return self.childViewControllers.count > 1;
+//}
+//
+//// 重写pushViewController方法,通过该方法实现统一修改导航栏左边的返回按钮
+//- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+//{
+//    // 判断是否是导航控制器的根控制器,如果是根控制器,则不添加导航条左边返回按钮
+//    if (self.childViewControllers.count > 0) {
+//        // 设置跳转的目标控制器的返回按钮为白色箭头的图片
+//        // 以下操作覆盖了导航条系统自带的返回按钮,系统的边缘滑动功能失效,不会是自定义手势失效
+//        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriginalImageName:@"NavBack"] style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonClick)];
+//        
+//        // 导航控制器子控制器跳转,隐藏底部TabBar, 也可以在storyboard中设置子控制器的hidesBottomBarWhenPushed属性
+//        viewController.hidesBottomBarWhenPushed = YES;
+//    }
+//    
+//    // 执行跳转操作
+//    [super pushViewController:viewController animated:animated];
+//}
+//
+//// 点击左边的按钮,执行popViewControllerAnimated操作
+//- (void)leftBarButtonClick
+//{
+//    // 点击左边返回按钮,执行pop操作
+//    [self popViewControllerAnimated:YES];
+//}
+
 
 
 // 边缘拖动方式二
