@@ -74,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D91A052B1C2A81B700BAAC03 /* Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Single.h; sourceTree = "<group>"; };
 		D955E60B1C25B5E500A47220 /* WXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBlurView.h; sourceTree = "<group>"; };
 		D955E60C1C25B5E500A47220 /* WXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBlurView.m; sourceTree = "<group>"; };
 		D955E6101C25B7BC00A47220 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
@@ -193,6 +194,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D91A052A1C2A81B700BAAC03 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D91A052B1C2A81B700BAAC03 /* Single.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		D955E60E1C25B7BC00A47220 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +618,7 @@
 		D9D336301C21D3D7001F920E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D91A052A1C2A81B700BAAC03 /* Tools */,
 				D955E60E1C25B7BC00A47220 /* Lib */,
 				D9D336311C21D3D7001F920E /* AppDelegate.h */,
 				D9D336321C21D3D7001F920E /* AppDelegate.m */,

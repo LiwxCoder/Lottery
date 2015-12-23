@@ -11,6 +11,7 @@
 #import "WXSettingItem.h"
 #import "WXArrowSettingItem.h"
 #import "WXSettingCell.h"
+#import "WXSwitchSettingItem.h"
 
 @interface WXBaseSettingViewController : UITableViewController
 @property (nonatomic, strong) NSMutableArray *groups;
