@@ -16,7 +16,6 @@
  SingleH(FileTools)
  @end
  
- 
  // ------------------------------------------
  // WXFileTools.m
  #import "WXFileTools.h"
